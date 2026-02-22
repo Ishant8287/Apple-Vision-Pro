@@ -9,60 +9,49 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
-  font-family: SF Pro;
+  font-family: SF PRO DISPLAY;
 }
-
 html,
 body {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
-
 #main {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-
-/* ================= PAGE BASE ================= */
-
-section {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-}
-
-/* ================= PAGE 1 ================= */
-
 #page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   background-color: #000;
 }
-
-#page nav {
+#page > nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0px 20px;
   height: 7vh;
-  width: 60%;
+  width: 50vw;
   position: absolute;
-  top: 0;
+  top: 0%;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: #fff;
 }
-
-#page nav button {
+#page > nav > button {
   padding: 7px 20px;
   border-radius: 50px;
   border: none;
   background-color: #fff;
-  font-size: 0.9rem;
 }
-
-#page video {
+#page > nav > h3 {
+  font-weight: 400;
+}
+#page > video {
   height: 100%;
   width: 50%;
   object-fit: cover;
@@ -70,47 +59,72 @@ section {
   left: 50%;
   transform: translateX(-50%);
 }
-
 #page-bottom {
   height: 20%;
-  width: 30%;
+  width: 25%;
   position: absolute;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  filter: invert(1);
+  flex-direction: column;
 }
-
-#page-bottom h3 {
-  margin-bottom: 1rem;
-  font-size: clamp(16px, 2vw, 28px);
+#page-bottom > h3 {
+  color: #dadada93;
+  margin-bottom: 1vw;
 }
-
-/* ================= COMMON HEADINGS ================= */
-
-h1 {
-  font-size: clamp(24px, 4vw, 60px);
-  font-weight: 400;
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
 }
-
-/* ================= VIDEO PAGES ================= */
-
-video {
+#page1 > video {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
-/* ================= PAGE 3 ================= */
-
-#page3 {
-  background: #fff;
+#page1 > h1 {
+  font-size: 4vw;
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
+#page2 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+#page2 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#page2 > h1 {
+  font-size: 4vw;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+#page3 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
 #page3 > img {
   width: 60%;
   position: absolute;
@@ -118,192 +132,894 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 #page3-upper {
   height: 25%;
-  width: 40%;
+  width: 35%;
   position: absolute;
+  z-index: 9;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
-
 #page3-upper > img {
-  width: 70%;
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  width: 70%;
 }
-
 #page3-upper-inner {
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   height: 60%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0px 80px;
   color: #ff823d;
 }
-
+#page3-upper-inner > h3 {
+  font-weight: 500;
+}
 #page3 > button {
   position: absolute;
   bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 12px 28px;
+  padding: 15px 30px;
   border: 1px solid #000;
+  font-weight: 500;
   background-color: #fff;
   border-radius: 50px;
-  font-size: clamp(14px, 1.2vw, 22px);
-  cursor: pointer;
+  font-size: 1.4vw;
 }
 
-/* ================= PAGE 5 ================= */
+#page4 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+#page4 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#center-page4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2vw;
+}
 
 #page5 {
   display: flex;
-  min-height: 60vh;
-}
-
-#left5,
-#right5 {
-  width: 50%;
   position: relative;
+  height: 60vh;
+  width: 100vw;
 }
-
-#left5 h1 {
+.left5 {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+.left5 > h1 {
+  font-size: 2.3vw;
   position: absolute;
-  top: 15%;
   left: 50%;
   transform: translateX(-50%);
+  top: 10%;
 }
-
-#right5 {
+.right5 {
   display: flex;
-  flex-direction: column;
+  align-items: start;
   justify-content: center;
-  padding: 0 5vw;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  padding-left: 5vw;
 }
-
-#right5 h3 {
-  font-size: clamp(16px, 2vw, 28px);
+.right5 > h3 {
+  font-size: 2vw;
+  width: 90%;
   color: #484848d7;
 }
-
-#right5 button {
-  margin-top: 20px;
+.right5 > button {
   padding: 10px 20px;
-  border-radius: 50px;
-  background: #ff823d;
-  color: white;
   border: none;
-  font-size: clamp(14px, 1.3vw, 20px);
+  background-color: #ff823d;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 50px;
+  font-size: 1.3vw;
+  margin-top: 1.5vw;
 }
-
-/* ================= PAGE 6 ================= */
-
 #page6 {
-  background: #f5f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  padding: 60px 20px;
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  background-color: #f5f5f7;
 }
-
-#page6 p {
-  max-width: 700px;
-  margin: auto;
-  font-size: clamp(14px, 1.2vw, 20px);
-  font-weight: 600;
+#page6 > h3 {
+  margin-bottom: 1vw;
+  font-size: 2vw;
+}
+#page6 > h1 {
+  margin-bottom: 1.5vw;
+  font-size: 4vw;
+}
+#page6 > p {
+  font-size: 1.2vw;
+  width: 60%;
+  font-weight: 700;
   color: #545454c9;
 }
 
-/* ================= PAGE 14 ================= */
-
-#page14 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: #fff;
+#page7 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
 }
 
-.left14,
+#page7 > canvas {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 99;
+}
+#page8 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+#page8 > h1 {
+  width: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #4d4d4d;
+  z-index: 99;
+  position: absolute;
+}
+#page8 > h1 > span {
+  color: #000;
+}
+#page9 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+#page9 > h1 {
+  width: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #4d4d4d;
+  z-index: 99;
+  position: absolute;
+}
+#page9 > h1 > span {
+  color: #000;
+}
+#page10 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+#page10 > h1 {
+  width: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #4d4d4d;
+  z-index: 99;
+  position: absolute;
+}
+#page10 > h1 > span {
+  color: #000;
+}
+#page11 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+#page11 > h1 {
+  width: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #4d4d4d;
+  z-index: 99;
+  position: absolute;
+}
+#page11 > h1 > span {
+  color: #000;
+}
+#page12 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+#page12 > h1 {
+  width: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #4d4d4d;
+  z-index: 99;
+  position: absolute;
+}
+#page12 > h1 > span {
+  color: #000;
+}
+#page13 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f7;
+}
+#page13 > h1 {
+  width: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #4d4d4d;
+  z-index: 99;
+  position: absolute;
+}
+#page13 > h1 > span {
+  color: #000;
+}
+#page14 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+.left14 {
+  height: 90%;
+  width: 45%;
+  position: relative;
+  background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_top__k3b8lzqd1l2m_large.jpg);
+  background-size: cover;
+}
 .right14 {
   height: 90%;
   width: 45%;
+  position: relative;
+  background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_side__gm4agomrwl2e_large.jpg);
   background-size: cover;
-  background-position: center;
 }
-
-/* ================= PAGE 16 FIX ================= */
-
-#page16 img {
+#page15 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#center-page15 {
+  height: 90%;
+  width: 95%;
+  position: relative;
+  overflow: hidden;
+}
+#center-page15 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#page16 {
+  position: relative;
+  height: 120vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#page16 > h2 {
+  position: absolute;
+  width: 50%;
+  color: #434343c7;
+  font-weight: 500;
+  top: 5%;
+}
+#page16 > h2 > span {
+  color: #000;
+}
+#page16 > img {
   width: 60%;
   position: absolute;
-  bottom: 20%;
+  bottom: 0%;
+}
+#page16 > button {
+  position: absolute;
+  bottom: 10%;
+  padding: 10px 20px;
+  font-size: 1.5vw;
+  border-radius: 50px;
+  background-color: #ff823d;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+#page17 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+#page17 > h4 {
+  font-size: 2vw;
+  font-weight: 500;
+  margin-bottom: 2vw;
+}
+#page17 > h1 {
+  font-size: 5vw;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 3vw;
+}
+#page17 > p {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 2vw;
+  color: #ffffff7c;
+  width: 50%;
+  text-align: center;
+}
+#page17 > p > span {
+  color: #fff;
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
+#page18 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+}
+#page18 > canvas {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vw;
+}
+#page19 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  height: 30vh;
+  width: 100vw;
+  background-color: #000;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5vw;
+}
+#page19 > h5 {
+  width: 35%;
+}
+#page20 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+#page20 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#center-page20 {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  bottom: 18%;
+  right: 5%;
+  color: #fff;
+}
+#center-page20 > h1 {
+  margin-bottom: 1.7vw;
+}
+#page21 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+#page21 > #troff {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50%;
+  z-index: 9;
+}
+#page21 > #tron {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50%;
+}
+#page22 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+#page22 > #snroff {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50%;
+  z-index: 9;
+}
+#page22 > #snron {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50%;
+}
+#page23 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+#page23 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
 
-@media (max-width: 768px) {
+/* ============================= */
+/* ======= TABLET VIEW ========= */
+/* ============================= */
 
-  #page nav {
-    width: 90%;
-    font-size: 14px;
+@media (max-width: 1024px) {
+  #page > nav {
+    width: 80vw;
   }
 
-  #page video {
-    width: 100%;
-  }
-
-  #page-bottom {
+  #page1 > h1,
+  #page2 > h1 {
+    font-size: 6vw;
+    text-align: center;
+    white-space: normal;
     width: 90%;
   }
 
   #page3 > img {
-    width: 90%;
-  }
-
-  #page3-upper {
     width: 80%;
-  }
-
-  #page3-upper-inner {
-    padding: 0 20px;
   }
 
   #page5 {
     flex-direction: column;
-    padding: 40px 20px;
+    height: auto;
+    padding: 5vh 0;
   }
 
-  #left5,
-  #right5 {
+  .left5,
+  .right5 {
     width: 100%;
     text-align: center;
   }
 
-  #left5 h1 {
-    position: static;
+  .left5 > h1 {
+    position: relative;
     transform: none;
-    margin-bottom: 20px;
+    left: auto;
+    font-size: 5vw;
   }
 
-  #page14 {
+  .right5 {
+    padding: 0 5vw;
+    margin-top: 4vh;
+  }
+
+  .right5 > h3 {
+    font-size: 3.5vw;
+  }
+
+  .right5 > button {
+    font-size: 3vw;
+  }
+
+  #page6 > h1 {
+    font-size: 6vw;
+  }
+
+  #page6 > p {
+    width: 80%;
+    font-size: 2.5vw;
+  }
+
+  #page16 > h2 {
+    width: 80%;
+    font-size: 3vw;
+  }
+
+  #center-page20 {
+    width: 60%;
+  }
+}
+
+/* ============================= */
+/* ======= MOBILE VIEW ========= */
+/* ============================= */
+
+@media (max-width: 600px) {
+  #page > nav {
+    width: 95%;
+    font-size: 4vw;
+  }
+
+  #page > nav > button {
+    padding: 5px 15px;
+    font-size: 3.5vw;
+  }
+
+  #page1 > h1,
+  #page2 > h1 {
+    font-size: 7vw;
+  }
+
+  #page3-upper {
+    width: 90%;
+  }
+
+  #page3-upper-inner {
+    padding: 0 20px;
+    font-size: 3vw;
+  }
+
+  #page3 > button {
+    font-size: 4vw;
+    padding: 10px 20px;
+  }
+
+  #page4 > video,
+  #page20 > video {
+    object-fit: cover;
+  }
+
+  #page6 {
+    height: auto;
+    padding: 5vh 5vw;
+  }
+
+  #page6 > h3 {
+    font-size: 5vw;
+  }
+
+  #page6 > h1 {
+    font-size: 8vw;
+  }
+
+  #page6 > p {
+    width: 100%;
+    font-size: 4vw;
+  }
+
+  #page16 {
+    height: auto;
+    padding: 5vh 5vw;
+  }
+
+  #page16 > h2 {
+    width: 100%;
+    font-size: 4vw;
+    position: relative;
+  }
+
+  #page16 > img {
+    position: relative;
+    width: 90%;
+    margin-top: 5vh;
+  }
+
+  #page16 > button {
+    font-size: 4vw;
+  }
+
+  #page17 > h4 {
+    font-size: 4vw;
+  }
+
+  #page17 > h1 {
+    font-size: 9vw;
+  }
+
+  #page17 > p {
+    width: 90%;
+    font-size: 4vw;
+  }
+
+  #center-page20 {
+    width: 90%;
+    right: 5%;
+    font-size: 3.5vw;
+  }
+
+  #page19 > h5 {
+    width: 90%;
+    font-size: 4vw;
+  }
+}
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+  /* Remove nowrap everywhere */
+  #page1 > h1,
+  #page2 > h1 {
+    white-space: normal;
+    width: 90%;
+    text-align: center;
+    font-size: 7vw;
+  }
+
+  /* Remove fixed heights */
+  #page5,
+  #page6,
+  #page16 {
+    height: auto;
+    padding: 8vh 5vw;
+  }
+
+  /* Page 5 column layout */
+  #page5 {
     flex-direction: column;
   }
 
-  .left14,
-  .right14 {
-    width: 90%;
-    height: 40vh;
-    margin-bottom: 20px;
+  .left5,
+  .right5 {
+    width: 100%;
+    text-align: center;
   }
 
-  #page16 img {
-    width: 90%;
-    bottom: 25%;
+  .left5 > h1 {
+    position: relative;
+    left: auto;
+    transform: none;
+    font-size: 6vw;
   }
 
+  .right5 {
+    padding: 0;
+    margin-top: 4vh;
+  }
+
+  .right5 > h3 {
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  .right5 > button {
+    font-size: 4vw;
+  }
+
+  /* Fix all page8 to page13 text blocks */
+  #page8 > h1,
+  #page9 > h1,
+  #page10 > h1,
+  #page11 > h1,
+  #page12 > h1,
+  #page13 > h1 {
+    width: 90%;
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  /* Page 6 */
+  #page6 > h1 {
+    font-size: 8vw;
+  }
+
+  #page6 > p {
+    width: 90%;
+    font-size: 4vw;
+  }
+
+  /* Page 16 */
+  #page16 > h2 {
+    position: relative;
+    width: 90%;
+    font-size: 4vw;
+  }
+
+  #page16 > img {
+    position: relative;
+    width: 95%;
+    margin-top: 5vh;
+  }
+
+  #page16 > button {
+    position: relative;
+    font-size: 4vw;
+    margin-top: 4vh;
+  }
+
+  /* Page 17 */
+  #page17 > h1 {
+    font-size: 10vw;
+  }
+
+  #page17 > p {
+    width: 90%;
+    font-size: 4vw;
+  }
+
+  /* Center page20 */
+  #center-page20 {
+    width: 90%;
+    right: 5%;
+    font-size: 4vw;
+  }
+
+  #page19 > h5 {
+    width: 90%;
+    font-size: 4vw;
+  }
+} /* ================= IPHONE FIX ================= */
+@media (max-width: 430px) {
+  /* Allow text wrapping */
+  #page1 > h1,
+  #page2 > h1 {
+    white-space: normal !important;
+    width: 90%;
+    text-align: center;
+    font-size: 7vw;
+  }
+
+  /* Fix page5 layout */
+  #page5 {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .left5,
+  .right5 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left5 > h1 {
+    position: static;
+    transform: none;
+    font-size: 6vw;
+  }
+
+  .right5 {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .right5 > h3 {
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  .right5 > button {
+    font-size: 4vw;
+  }
+
+  /* Fix small text sections (page8–page13) */
+  #page8 > h1,
+  #page9 > h1,
+  #page10 > h1,
+  #page11 > h1,
+  #page12 > h1,
+  #page13 > h1 {
+    width: 90% !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, -50%) !important;
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  /* Fix page6 */
+  #page6 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  #page6 > h1 {
+    font-size: 8vw;
+  }
+
+  #page6 > p {
+    width: 95%;
+    font-size: 4vw;
+  }
+
+  /* Fix page16 */
+  #page16 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  #page16 > h2 {
+    position: static;
+    width: 95%;
+    font-size: 4vw;
+  }
+
+  #page16 > img {
+    position: static;
+    width: 95%;
+    margin-top: 20px;
+  }
+
+  #page16 > button {
+    position: static;
+    font-size: 4vw;
+    margin-top: 20px;
+  }
+
+  /* Page17 */
+  #page17 > h1 {
+    font-size: 9vw;
+  }
+
+  #page17 > p {
+    width: 90%;
+    font-size: 4vw;
+  }
+
+  /* Page19 */
+  #page19 > h5 {
+    width: 90%;
+    font-size: 4vw;
+  }
+
+  /* Page20 text box */
+  #center-page20 {
+    width: 90%;
+    right: 5%;
+    font-size: 4vw;
+  }
 }
