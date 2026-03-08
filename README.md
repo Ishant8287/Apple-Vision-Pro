@@ -87,8 +87,6 @@ Apple-Vision-Pro-Clone
 
 ![Project Screenshot](screenshots/image1.png)
 
-![Project Screenshot](screenshots/image2.png)
-
 ![Project Screenshot](screenshots/image3.png)
 
 ![Project Screenshot](screenshots/image4.png)
