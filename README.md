@@ -97,7 +97,7 @@ Apple-Vision-Pro-Clone
 Clone the repository
 
 ```
-git clone https://github.com/yourusername/Apple-Vision-Pro.git
+git clone https://github.com/Ishant8287/Apple-Vision-Pro.git
 ```
 
 Open the project folder
